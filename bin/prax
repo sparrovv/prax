@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 # follows symlinks to real root
-cd `dirname $(readlink -f $0)`
+cd `dirname $0`
 PRAX_ROOT=`dirname $(pwd -P)`
 
 # Loads either rbenv or RVM (if present)
